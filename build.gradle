@@ -1,0 +1,21 @@
+apply plugin: "groovy"
+apply plugin: "application"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.1.3'
+
+    compile 'org.apache.camel:camel-core:2.14.1'
+    compile 'org.apache.camel:camel-rabbitmq:2.14.1'
+    compile 'org.apache.camel:camel-mongodb:2.14.1'  
+    compile 'org.apache.camel:camel-xmljson:2.14.0' 
+     
+    compile 'org.slf4j:slf4j-simple:1.6.6'
+    
+    testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
+}
+
+mainClassName = "com.gex.cms.newswires.newswireswatch.NewswiresWatch"
