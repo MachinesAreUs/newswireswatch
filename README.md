@@ -1,24 +1,14 @@
-Groovy Application project template
+Newswires Watch	
 ------------------------------------
 
-You have just created a basic Groovy application. There is a standard project
-structure for source code and tests.
+This project ejemplifies the integration capabilities of Apache Camel 
+using the groovy language.
 
-In this project you get:
+You'll need a running RabbitMQ and MongoDB servers.
 
-* A Gradle build file
-* A standard project structure:
+Then just type:
 
-    <proj>
-      |
-      +- src
-          |
-          +- main
-          |     |
-          |     +- groovy
-          |
-          +- test
-          |   |
-          |   +- groovy
+    gradle run
 
-          |
+and start placing NewsML2 files in the src/ directory (see NewswiresWatch.groovy).
+
